@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Use F1, F2... as standard function keys
 defaults write "Apple Global Domain" "com.apple.keyboard.fnState" "1"
 

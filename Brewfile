@@ -5,5 +5,6 @@ tap 'homebrew/bundle'
 
 brew 'wget'
 brew 'jq'
+brew 'nvm'
 
 cask 'bitwarden'
