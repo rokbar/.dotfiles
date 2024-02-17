@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Use F1, F2... as standard function keys
 defaults write "Apple Global Domain" "com.apple.keyboard.fnState" "1"
@@ -14,3 +14,7 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 # Autohide dock
 defaults write com.apple.Dock autohide "1"
+
+# Set iterm2 settings
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm2/settings"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true

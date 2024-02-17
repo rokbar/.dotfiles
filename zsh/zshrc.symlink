@@ -1,0 +1,36 @@
+# Stolen from https://github.com/holman/dotfiles/blob/master/zsh/aliases.zsh
+
+# Shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+# All of our zsh files
+declare config_files
+config_files=($ZSH/**/*.zsh)
+
+echo $config_files
+echo ${(M)config_files:#*/path.zsh}
+
+# Load the path files
+for file in ${(M)config_files:#*/path.zsh}
+do
+  echo $file
+  source $file
+done
+
+# Load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+
+# Initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
+# Load every completion after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files
