@@ -46,8 +46,6 @@ $ZSH/macos/defaults.sh
 # Install homebrew
 $ZSH/homebrew/install.sh 2>&1
 
-brew untap 'homebrew/core'
-
 # Upgrade homebrew
 echo "› brew update"
 brew update
