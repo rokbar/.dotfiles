@@ -4,11 +4,11 @@
 
 These .dotfiles are mainly based on these public dotfiles:
 - [holman's dotfiles](https://github.com/holman/dotfiles) - picked bootstrap script, idea of building on topics (read below).
-- [mathiasbynen's dotfiles](https://github.com/mathiasbynens/dotfile) - picked aliases aliases.
+- [mathiasbynen's dotfiles](https://github.com/mathiasbynens/dotfile) - picked aliases.
 
 ## 📚 Topical
 
-Everything is built on topics. If you're adding new topic, for example **"git"**, you can create `git` directoy and put files there.
+Everything is built on topics. If you're adding a new topic, for example **"git"**, you can create `git` directoy and put files there.
 Anything with an extension of `.zsh` will get automatically included into your shell. Anything with an extension of ``.symlink`` will get symlinked without extension into `$HOME` when you run `script/bootstrap`. 
 
 ## ✨ Components
