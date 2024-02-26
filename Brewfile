@@ -6,6 +6,7 @@ brew 'git'
 brew 'wget'
 brew 'jq'
 brew 'nvm'
+brew 'pnpm'
 brew 'bash-completion'
 
 cask 'bitwarden'
