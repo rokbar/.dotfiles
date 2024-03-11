@@ -10,3 +10,4 @@ brew 'pnpm'
 brew 'bash-completion'
 
 cask 'bitwarden'
+cask 'arc'
