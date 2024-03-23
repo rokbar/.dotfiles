@@ -13,7 +13,8 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iter
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 # Autohide dock
-defaults write com.apple.Dock autohide "1"
+defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock "show-recents" -bool "false"
 
 # Set iterm2 settings
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm2/settings"
