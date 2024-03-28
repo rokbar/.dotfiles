@@ -11,3 +11,4 @@ brew 'bash-completion'
 
 cask 'bitwarden'
 cask 'arc'
+cask 'visual-studio-code'
