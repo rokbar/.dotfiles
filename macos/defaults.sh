@@ -22,3 +22,7 @@ defaults write com.apple.dock "tilesize" -int "42"
 # Set iterm2 settings
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm2/settings"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+# Functional key behavior
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
