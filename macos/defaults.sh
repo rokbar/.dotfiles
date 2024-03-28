@@ -16,6 +16,9 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 defaults write com.apple.dock "autohide" -bool "true"
 defaults write com.apple.dock "show-recents" -bool "false"
 
+# Dock size
+defaults write com.apple.dock "tilesize" -int "42"
+
 # Set iterm2 settings
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm2/settings"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
