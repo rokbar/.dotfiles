@@ -8,6 +8,7 @@ brew 'jq'
 brew 'nvm'
 brew 'pnpm'
 brew 'bash-completion'
+brew 'font-fira-code'
 
 cask 'bitwarden'
 cask 'arc'
