@@ -93,6 +93,17 @@
       system.defaults = {
         dock.autohide = true;
         finder.FXPreferredViewStyle = "clmv";
+        NSGlobalDomain."com.apple.keyboard.fnState" = true;
+        loginwindow.GuestEnabled = false;
+        dock.show-recents = false;
+        dock.tilesize = 42;
+        dock.static-only = true;
+        dock.persistent-apps = [
+          "/Applications/Arc.app"
+          "/Applications/Notion.app"
+          "/System/Applications/Calendar.app"
+          "/Applications/NordPass.app"
+        ];
       };
     };
   in
