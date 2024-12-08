@@ -50,6 +50,7 @@
         ];
 	      masApps = {
           "Yoink" = 457622435;
+          "Perplexity" = 6714467650;
         };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -91,6 +92,7 @@
 
       system.defaults = {
         dock.autohide = true;
+        finder.FXPreferredViewStyle = "clmv";
       };
     };
   in

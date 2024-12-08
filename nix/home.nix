@@ -1,5 +1,26 @@
 { config, pkgs, ... }:
 
+let 
+  lsColorScript = pkgs.writeShellScript "ls-color-check" ''
+    if ls --color > /dev/null 2>&1; then
+      echo "--color"
+    else
+      echo "-G"
+    fi
+  '';
+  shellAliases = {
+    pn = "pnpm";
+    # Print processes of specific port, e.g pbp :3005
+    pbp = "lsof -i";
+
+    l = "ls -lF $(${lsColorScript})";
+    la = "ls -lAF $(${lsColorScript})";
+    lsd = "ls -lF $(${lsColorScript}) | grep --color=never '^d'";
+    ls = "command ls $(${lsColorScript})";
+
+    path ="echo $PATH | tr ':' '\\n'";
+  };
+in 
 {
   home.username = "rokas";
   home.homeDirectory = "/Users/rokas";
@@ -67,6 +88,7 @@
   programs.home-manager.enable = true;
 
   programs.zsh = {
+    inherit shellAliases;
     enable = true;
     oh-my-zsh = {
       enable = true;
@@ -99,6 +121,9 @@
     ];
     initExtra = ''
       eval "$(starship init zsh)"
+
+      # autocomplete
+      source <(fnm completions --shell zsh)
     '';
   };
 }
