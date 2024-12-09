@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 let 
   lsColorScript = pkgs.writeShellScript "ls-color-check" ''
@@ -24,6 +24,13 @@ in
 {
   home.username = "rokas";
   home.homeDirectory = "/Users/rokas";
+
+  home.activation = {
+    runCustomScript = lib.hm.dag.entryAfter ["writeBoundary"] ''
+        $DRY_RUN_CMD echo "Running custom script"
+        $DRY_RUN_CMD ${config.home.homeDirectory}/.dotfiles/git/gitconfig_setup.sh
+    '';
+  };
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

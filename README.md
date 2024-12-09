@@ -4,8 +4,6 @@
 
 Moving from Homebrew-based dotfiles (`homebrew` branch) to Nix-based dotfiles offers several compelling advantages, including a declarative approach to configuration management, improved reproducibility across different systems, and the ability to manage both packages and dotfiles within a single, unified framework.
 
-This transition allows for more robust version control, easier sharing of configurations, and the potential to create isolated development environments, ultimately leading to a more streamlined and consistent setup process across multiple machines
-
 ### Setup
 
 1. Install Nix:
