@@ -24,13 +24,3 @@ nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch 
 nix flake update
 darwin-rebuild switch --flake ~/nix#m1pro
 ```
-
-## 💾 Git
-
-Run this:
-
-```sh
-git clone git@github.com:rokbar/.dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-script/bootstrap
-```
