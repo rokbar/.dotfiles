@@ -13,6 +13,7 @@
       "notion"
       "iina"
       "the-unarchiver"
+      "ghostty"
     ];
     masApps = {
       "Yoink" = 457622435;

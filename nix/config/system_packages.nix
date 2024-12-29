@@ -8,6 +8,7 @@
     pkgs.fira-code
     pkgs.fnm
     pkgs.pnpm
+    pkgs.nodejs
     pkgs.mkalias
     pkgs.autojump
     pkgs.starship

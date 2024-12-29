@@ -17,6 +17,7 @@
       "/Applications/Notion.app"
       "/System/Applications/Calendar.app"
       "/Applications/NordPass.app"
+      "/Applications/Ghostty.app"
     ];
 
     CustomUserPreferences = {
