@@ -2,7 +2,6 @@
   homebrew = {
     enable = true;
     casks = [
-      "arc"
       "visual-studio-code"
       "rectangle"
       "nordvpn"
@@ -14,6 +13,9 @@
       "iina"
       "the-unarchiver"
       "ghostty"
+      "spotify"
+      "zen-browser"
+      "nvidia-geforce-now"
     ];
     masApps = {
       "Yoink" = 457622435;
@@ -23,4 +25,4 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
   };
-}   
+}
