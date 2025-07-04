@@ -15,7 +15,7 @@
       "ghostty"
       "spotify"
       "zen-browser"
-      "nvidia-geforce-now"
+      "chatgpt"
     ];
     masApps = {
       "Yoink" = 457622435;

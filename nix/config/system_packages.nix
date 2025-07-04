@@ -12,5 +12,6 @@
     pkgs.mkalias
     pkgs.autojump
     pkgs.starship
+    pkgs.claude-code
   ];
 }

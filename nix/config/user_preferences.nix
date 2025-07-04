@@ -2,7 +2,7 @@
   system.defaults = {
     finder.FXPreferredViewStyle = "clmv";
     loginwindow.GuestEnabled = false;
-    
+
     NSGlobalDomain."com.apple.keyboard.fnState" = true;
     NSGlobalDomain.AppleInterfaceStyle = "Dark";
     NSGlobalDomain.AppleICUForce24HourTime = true;
