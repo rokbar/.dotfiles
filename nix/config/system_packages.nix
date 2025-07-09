@@ -13,6 +13,7 @@
     pkgs.autojump
     pkgs.starship
     pkgs.claude-code
+    pkgs.discord
     pkgs.docker
     pkgs.colima
   ];
