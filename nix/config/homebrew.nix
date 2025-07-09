@@ -6,7 +6,6 @@
       "rectangle"
       "nordvpn"
       "nordpass"
-      "docker"
       "hazeover"
       "raycast"
       "notion"
@@ -14,7 +13,6 @@
       "the-unarchiver"
       "ghostty"
       "spotify"
-      "zen-browser"
       "chatgpt"
     ];
     masApps = {
