@@ -5,7 +5,6 @@
       "visual-studio-code"
       "rectangle"
       "nordvpn"
-      "nordpass"
       "hazeover"
       "raycast"
       "notion"
@@ -14,6 +13,7 @@
       "ghostty"
       "spotify"
       "chatgpt"
+      "google-cloud-sdk"
     ];
     masApps = {
       "Yoink" = 457622435;
