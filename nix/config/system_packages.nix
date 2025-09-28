@@ -5,12 +5,13 @@
     pkgs.vim
     pkgs.wget
     pkgs.jq
+    pkgs.ffmpeg
     pkgs.fira-code
     pkgs.fnm
     pkgs.ffmpeg
     pkgs.bitwarden-desktop
     pkgs.pnpm
-    pkgs.nodejs
+    pkgs.nodejs_24
     pkgs.mkalias
     pkgs.autojump
     pkgs.starship
@@ -18,5 +19,6 @@
     pkgs.discord
     pkgs.docker
     pkgs.colima
+    pkgs.nodePackages.firebase-tools
   ];
 }

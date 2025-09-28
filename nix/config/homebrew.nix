@@ -13,6 +13,7 @@
       "ghostty"
       "spotify"
       "chatgpt"
+      "google-cloud-sdk"
     ];
     masApps = {
       "Yoink" = 457622435;
