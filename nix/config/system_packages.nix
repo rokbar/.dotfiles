@@ -7,6 +7,8 @@
     pkgs.jq
     pkgs.fira-code
     pkgs.fnm
+    pkgs.ffmpeg
+    pkgs.bitwarden-desktop
     pkgs.pnpm
     pkgs.nodejs
     pkgs.mkalias

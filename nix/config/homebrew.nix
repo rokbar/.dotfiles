@@ -5,7 +5,6 @@
       "visual-studio-code"
       "rectangle"
       "nordvpn"
-      "nordpass"
       "hazeover"
       "raycast"
       "notion"
