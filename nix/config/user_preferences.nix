@@ -13,11 +13,11 @@
     dock.tilesize = 42;
     dock.static-only = true;
     dock.persistent-apps = [
-      "/Applications/Arc.app"
       "/Applications/Notion.app"
       "/System/Applications/Calendar.app"
-      "/Applications/NordPass.app"
       "/Applications/Ghostty.app"
+      "/Applications/Helium.app"
+      "/Applications/Zen.app"
     ];
 
     CustomUserPreferences = {

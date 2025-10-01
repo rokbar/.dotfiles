@@ -14,6 +14,7 @@
       "spotify"
       "chatgpt"
       "google-cloud-sdk"
+      "helium-browser"
     ];
     masApps = {
       "Yoink" = 457622435;
