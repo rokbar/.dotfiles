@@ -1,9 +1,6 @@
-# Taps
-
-tap "homebrew/cask-fonts"
-
 # Formulae
 
+brew "chezmoi"
 brew "autojump"
 brew "colima"
 brew "docker"

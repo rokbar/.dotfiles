@@ -1,5 +1,13 @@
 if [ -x /opt/homebrew/bin/brew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
+  path=(/opt/homebrew/bin /opt/homebrew/sbin ${path:#/opt/homebrew/bin} ${path:#/opt/homebrew/sbin})
+  if [ -d /opt/homebrew/opt/node@22/bin ]; then
+    path=(/opt/homebrew/opt/node@22/bin ${path:#/opt/homebrew/opt/node@22/bin})
+  fi
 elif [ -x /usr/local/bin/brew ]; then
   eval "$(/usr/local/bin/brew shellenv)"
+  path=(/usr/local/bin /usr/local/sbin ${path:#/usr/local/bin} ${path:#/usr/local/sbin})
+  if [ -d /usr/local/opt/node@22/bin ]; then
+    path=(/usr/local/opt/node@22/bin ${path:#/usr/local/opt/node@22/bin})
+  fi
 fi

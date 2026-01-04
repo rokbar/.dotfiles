@@ -44,6 +44,32 @@ chezmoi apply
 
 7. Restart or log out/in to ensure macOS defaults and Dock changes take effect.
 
+### Migration from Nix
+
+1. Install Homebrew and chezmoi (if not already installed).
+2. From the repo root, initialize chezmoi and apply:
+
+```sh
+cd ~/.dotfiles
+chezmoi init --source ./chezmoi
+chezmoi apply
+```
+
+3. Sign into the App Store (required for mas apps), then re-run:
+
+```sh
+chezmoi apply
+```
+
+4. Verify Homebrew is first on PATH:
+
+```sh
+type -a brew
+```
+
+5. Stop using Nix for daily changes (do not run `darwin-rebuild switch`).
+6. Once everything is verified, uninstall Nix (optional, later).
+
 ## ✨ Nix
 
 Moving from Homebrew-based dotfiles (`homebrew` branch) to Nix-based dotfiles offers several compelling advantages, including a declarative approach to configuration management, improved reproducibility across different systems, and the ability to manage both packages and dotfiles within a single, unified framework.
