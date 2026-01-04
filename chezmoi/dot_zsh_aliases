@@ -1,0 +1,15 @@
+ls_color_flag() {
+  if ls --color >/dev/null 2>&1; then
+    echo "--color"
+  else
+    echo "-G"
+  fi
+}
+
+alias pn="pnpm"
+alias pbp="lsof -i"
+alias l='ls -lF $(ls_color_flag)'
+alias la='ls -lAF $(ls_color_flag)'
+alias lsd='ls -lF $(ls_color_flag) | grep --color=never "^d"'
+alias ls='command ls $(ls_color_flag)'
+alias path='echo "$PATH" | tr ":" "\n"'

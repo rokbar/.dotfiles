@@ -1,0 +1,7 @@
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  path=(/opt/homebrew/bin /opt/homebrew/sbin ${path:#/opt/homebrew/bin} ${path:#/opt/homebrew/sbin})
+elif [ -x /usr/local/bin/brew ]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+  path=(/usr/local/bin /usr/local/sbin ${path:#/usr/local/bin} ${path:#/usr/local/sbin})
+fi

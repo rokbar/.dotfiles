@@ -1,0 +1,32 @@
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  path=(/opt/homebrew/bin /opt/homebrew/sbin ${path:#/opt/homebrew/bin} ${path:#/opt/homebrew/sbin})
+elif [ -x /usr/local/bin/brew ]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+  path=(/usr/local/bin /usr/local/sbin ${path:#/usr/local/bin} ${path:#/usr/local/sbin})
+fi
+
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
+
+ZSH_THEME="robbyrussell"
+plugins=(git autojump starship zsh-autosuggestions zsh-syntax-highlighting)
+
+if [ -f "$ZSH/oh-my-zsh.sh" ]; then
+  source "$ZSH/oh-my-zsh.sh"
+fi
+
+if [ -f "$HOME/.zsh_aliases" ]; then
+  source "$HOME/.zsh_aliases"
+fi
+
+if command -v fnm >/dev/null 2>&1; then
+  eval "$(fnm env --use-on-cd --shell zsh)"
+  if command -v fnm >/dev/null 2>&1; then
+    source <(fnm completions --shell zsh)
+  fi
+fi
+
+if command -v starship >/dev/null 2>&1; then
+  eval "$(starship init zsh)"
+fi
