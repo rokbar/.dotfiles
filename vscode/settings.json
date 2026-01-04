@@ -1,0 +1,56 @@
+{
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.biome": "explicit"
+        }
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.biome": "explicit"
+        }
+    },
+        "[jsonc]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "typescript.preferences.autoImportSpecifierExcludeRegexes": ["^node_modules/.*", "^next/router", ".*/dist/.*"],
+    "editor.formatOnSave": true,
+    "prettier.enable": false,
+    "biome.enabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.next": true,
+        "**/.npmrc": true,
+        "**/next-env.d.ts": true,
+        "**/tsconfig.tsbuildinfo": true,
+        "tsconfig.tsbuildinfo": true
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "typeChallenges.workspaceFolder": "${userHome}/.typeChallenges",
+    "window.autoDetectColorScheme": true,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "workbench.preferredDarkColorTheme": "poimandres"
+}

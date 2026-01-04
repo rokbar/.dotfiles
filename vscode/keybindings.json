@@ -1,0 +1,38 @@
+[
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+l",
+        "command": "settings.cycle.lineNumbers"
+    },
+    {
+        "key": "f1",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "cmd+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut"
+    }
+]

@@ -1,0 +1,61 @@
+{
+    "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+    "root": true,
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true,
+        "defaultBranch": "main"
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "performance": {
+                "noAccumulatingSpread": "off"
+            },
+            "recommended": true,
+            "correctness": {
+                "useExhaustiveDependencies": "off",
+                "noEmptyPattern": "info",
+                "noUnusedImports": "info",
+                "noNestedComponentDefinitions": "off"
+            },
+            "suspicious": {
+                "noDocumentCookie": "off",
+                "noArrayIndexKey": "info",
+                "useIterableCallbackReturn": "off",
+                "noExplicitAny": "warn",
+                "useAwait": "error"
+            },
+            "a11y": {
+                "noLabelWithoutControl": "warn",
+                "noStaticElementInteractions": "off",
+                "useKeyWithClickEvents": "off",
+                "useSemanticElements": "off",
+                "useFocusableInteractive": "info"
+            },
+            "nursery": {
+                "noImportCycles": "warn",
+                "noFloatingPromises": "error",
+                "noMisusedPromises": "error"
+            }
+        }
+    },
+    "formatter": {
+        "lineWidth": 120,
+        "indentStyle": "space",
+        "indentWidth": 4
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "semicolons": "asNeeded",
+            "indentStyle": "space"
+        }
+    },
+    "css": {
+        "parser": {
+            "tailwindDirectives": true
+        }
+    }
+}
