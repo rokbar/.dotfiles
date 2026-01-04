@@ -68,7 +68,11 @@ type -a brew
 ```
 
 5. Stop using Nix for daily changes (do not run `darwin-rebuild switch`).
-6. Once everything is verified, uninstall Nix (optional, later).
+6. Once everything is verified, uninstall Nix (optional, later):
+
+```sh
+./scripts/nix_cleanup_macos.sh
+```
 
 ## ✨ Nix
 
