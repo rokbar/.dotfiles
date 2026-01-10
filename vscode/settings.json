@@ -14,11 +14,14 @@
             "source.fixAll.biome": "explicit"
         }
     },
-        "[jsonc]": {
+    "[jsonc]": {
         "editor.defaultFormatter": "biomejs.biome"
     },
     "[astro]": {
         "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+     "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
     },
     "typescript.tsserver.experimental.enableProjectDiagnostics": true,
     "typescript.tsserver.maxTsServerMemory": 4096,
@@ -48,9 +51,11 @@
     "terminal.integrated.fontSize": 14,
     "typeChallenges.workspaceFolder": "${userHome}/.typeChallenges",
     "window.autoDetectColorScheme": true,
-    "editor.minimap.enabled": false,
     "editor.fontFamily": "FiraCode-Retina",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "monospace",
-    "workbench.preferredDarkColorTheme": "poimandres"
+    "workbench.preferredDarkColorTheme": "poimandres",
+    "editor.minimap.enabled": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.sideBar.location": "right"
 }

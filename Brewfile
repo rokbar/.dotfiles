@@ -12,6 +12,8 @@ brew "fnm"
 brew "starship"
 brew "vim"
 brew "wget"
+brew "docker-compose"
+brew "anomalyco/tap/opencode"
 
 # Casks
 
