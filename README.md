@@ -43,3 +43,17 @@ chezmoi apply
 ```
 
 7. Restart or log out/in to ensure macOS defaults and Dock changes take effect.
+
+### Install new items from Brewfile (without upgrading)
+
+If you add new entries to `Brewfile` and only want to install the missing ones:
+
+```sh
+brew bundle --file Brewfile
+```
+
+This installs packages that are not already installed and does not upgrade existing ones. To also upgrade, use:
+
+```sh
+brew bundle --file Brewfile --upgrade
+```

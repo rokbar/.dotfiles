@@ -14,6 +14,8 @@ brew "vim"
 brew "wget"
 brew "docker-compose"
 brew "anomalyco/tap/opencode"
+brew "flyctl"
+brew "awscli"
 
 # Casks
 
@@ -32,6 +34,8 @@ cask "rectangle"
 cask "spotify"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "codex"
+cask "codex-app"
 
 # App Store
 
