@@ -1,5 +1,7 @@
 # Formulae
 
+tap "manaflow-ai/cmux"
+
 brew "chezmoi"
 brew "autojump"
 brew "colima"
@@ -16,11 +18,13 @@ brew "docker-compose"
 brew "anomalyco/tap/opencode"
 brew "flyctl"
 brew "awscli"
+brew "lazygit"
 
 # Casks
 
 cask "bitwarden"
 cask "chatgpt"
+cask "cmux"
 cask "font-fira-code"
 cask "ghostty"
 cask "google-cloud-sdk"
