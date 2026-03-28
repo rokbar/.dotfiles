@@ -36,6 +36,11 @@ chezmoi init --source ./chezmoi
 chezmoi apply
 ```
 
+This applies the managed dotfiles and app configs, including the Ghostty
+macOS config at `~/Library/Application Support/com.mitchellh.ghostty/config`.
+Ghostty itself is installed from the `Brewfile`, so no extra setup step is
+needed beyond `chezmoi apply`.
+
 6. Sign into the App Store (required for mas apps), then re-run:
 
 ```sh
@@ -57,3 +62,13 @@ This installs packages that are not already installed and does not upgrade exist
 ```sh
 brew bundle --file Brewfile --upgrade
 ```
+
+## Ghostty
+
+Ghostty is managed by `chezmoi` from
+`chezmoi/private_Library/private_Application Support/com.mitchellh.ghostty/config`
+to `~/Library/Application Support/com.mitchellh.ghostty/config`.
+
+On macOS, Ghostty can also read an XDG config path under `~/.config/ghostty/`.
+Keep only one non-empty Ghostty config path to avoid ambiguity about which file
+Ghostty is loading.
