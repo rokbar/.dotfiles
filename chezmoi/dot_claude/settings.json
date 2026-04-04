@@ -1,5 +1,6 @@
 {
-  "skipDangerousModePermissionPrompt": true,
+  "skipDangerousModePermissionPrompt": false,
+  "showClearContextOnPlanAccept": true,
   "statusLine": {
     "type": "command",
     "command": "npx ccstatusline@latest"
